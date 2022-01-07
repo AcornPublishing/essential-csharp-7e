@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProductName>Chapter20</ProductName>
+  </PropertyGroup>
+  <Import Project="..\Chapter.props" />
+  <ItemGroup>
+    <Compile Remove="Listing20.08.SignaturesOfAsyncEnumerableSelectMethods.cs" />
+    <Compile Remove="Listing20.13.SynchronousHighLatencyInvocationInWPF.cs" />
+    <Compile Remove="Listing20.14.SynchronousHighLatencyInvocationInWPF.cs" />
+    <Compile Remove="Listing20.14.SynchronousHighLatencyInvocationInWPFUsingAwait.cs" />
+    <Compile Remove="Listing20.15.IteratingOverAwaitOperation.cs" />
+    <Compile Remove="Listing20.15.SynchronousHighLatencyInvocationInWPFUsingAwait.cs" />
+    <Compile Remove="Listing20.16.IteratingOverAwaitOperation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\PiCalculator+InternalPiDigitCalculator.cs">
+      <Link>PiCalculator+InternalPiDigitCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\Cryptographer.cs">
+      <Link>Cryptographer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\DoWorkEventArgs.cs">
+      <Link>DoWorkEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Shared\PiCalculator.cs">
+      <Link>PiCalculator.cs</Link>
+    </Compile>
+    <None Include="Listing20.08.SignaturesOfAsyncEnumerableSelectMethods.cs" />
+    <None Include="Listing20.14.SynchronousHighLatencyInvocationInWPF.cs" />
+    <None Include="Listing20.15.SynchronousHighLatencyInvocationInWPFUsingAwait.cs" />
+    <None Include="Listing20.16.IteratingOverAwaitOperation.cs" />
+    <PackageReference Include="System.Linq.Async" Version="5.0.0" />
+  </ItemGroup>
+</Project>

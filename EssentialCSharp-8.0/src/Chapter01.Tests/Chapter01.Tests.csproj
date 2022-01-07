@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+      <ChapterNumber>01</ChapterNumber>
+  </PropertyGroup>
+  <Import Project="..\ChapterTests.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\Chapter01\Chapter01.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Update="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Update="MSTest.TestFramework" Version="2.2.3" />
+  </ItemGroup>
+
+</Project>

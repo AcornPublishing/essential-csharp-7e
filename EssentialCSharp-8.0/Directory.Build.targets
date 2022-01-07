@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <NoWarn Condition="'$(IgnoreExpectedWarnings)'=='true'">$(ExpectedWarnings)</NoWarn>
+    <WarningsNotAsErrors>$(ExpectedWarnings)</WarningsNotAsErrors>
+  </PropertyGroup>
+  <Target Name="VSTestIfTestProject">
+    <CallTarget Targets="VSTest" Condition="'$(IsTestProject)' == 'true'" />
+  </Target>
+</Project>

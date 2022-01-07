@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ChapterNumber>07</ChapterNumber>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- 
+    CS0108 hides inherited member warning where 'new' is advised.
+    Listing the warning here causes it to be a warning rather than an error.
+    -->
+    <ExpectedWarnings>$(ExpectedWarnings),CS0108</ExpectedWarnings>
+  </PropertyGroup>
+  <Import Project="..\Chapter.props" />
+  <ItemGroup>
+    <Compile Include="..\Shared\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>
